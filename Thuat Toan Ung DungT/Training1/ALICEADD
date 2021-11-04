@@ -1,1 +1,20 @@
-
+Alice có a cái kẹo, Bob cho Alice b cái kẹo, hỏi Alice có tổng cộng bao nhiêu cái kẹo. Yêu cầu viết chương trình bằng ngôn ngữ C/C++
+Lưu ý giới hạn: a,b<10^19 dẫn đến c có thể vượt quá khai báo long long
+Input
+Gồm hai dòng, mỗi dòng ghi một số nguyên
+Output
+Một dòng chứa số nguyên là kết quả bài toán
+Scoring
+0≤a,b≤9×10^18 Có 50% test với a,b≤10^9
+Examples
+input
+1
+1
+output
+2
+input
+3
+5
+output
+8
+.....................................................................................................................................
