@@ -1,1 +1,7 @@
+(a+b) mod (10^9+7) a and b is in long long type
 
+Input
+contains a and b (1≤a,b≤18446744073709551614)
+
+Output
+(a+b) mod (10^9+7)
