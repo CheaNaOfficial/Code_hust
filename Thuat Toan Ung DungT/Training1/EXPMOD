@@ -1,1 +1,13 @@
+Given two positive integers a and b. Compute ab mod (109+7)
 
+Input
+One line contains two integers a and b (1≤a,b≤18446744073709551614)
+
+Output
+The value ab mod (109+7)
+
+Example
+inputCopy
+2 3
+outputCopy
+8
