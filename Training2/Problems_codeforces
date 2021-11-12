@@ -28,6 +28,8 @@ A. 02. HIST
   1
   1
   2
+ .................................................................................................................................................................
+ 
 B. 02. POSTMAN
   Chuyển phát hàng là một công việc quan trọng trong thương mại điện tử là lĩnh vực phát triển bùng nổ trong thời gian hiện nay.
   Ta xét công việc của một nhân viên giao hàng của Công ty XYZ chuyên bán hàng trên mạng. 
@@ -65,3 +67,298 @@ B. 02. POSTMAN
   9 5
   output
   42
+  .................................................................................................................................................................
+  
+C. 02. LOCATE
+  Hùng là tướng quân của một đội quân lớn, bộ phận thông tin đã chỉ ra rằng kẻ địch đã khởi động một loạt những máy bay chiến đấu nhỏ tiến sát tấn công quân của Hùng. 
+  Chỉ còn rất ít thời gian để phát hiện ra vị trí chính xác của các chiến đấu cơ này để mà tiêu diệt chúng. 
+  Hùng đã điều chỉnh lên tối đa độ nhạy của rada để định vị các chiến đấu cơ này dù rằng kích thước của chúng rất nhỏ, tuy nhiên điều đó cũng định vị luôn cả những chú chim đang bay gần đó. 
+  Tuy vậy Hùng biết rằng tất cả các chiến đấu cơ dịch chuyển chính xác theo cùng một cách, điều đó hi vọng giúp Hùng định vị chính xác vị trí của đàn chiến đấu cơ.
+  Cho biết mô tả của 2 hình ảnh mà rada thu được cách nhau 1 phút, Hùng muốn định vị tập lớn nhất các điểm trên ảnh 1, mà có thể tìm thấy nó trên ảnh 2 sau một khoảng di chuyển xác định. 
+  Biết rằng dàn chiến đấu cơ có thể không xuất hiện ở trên cả hai ảnh rada.
+  Input
+  Dòng đầu tiên ghi ra một số nguyên T là số test. Với mỗi test:
+  Dòng đầu tiên chứa 2 số nguyên L và C tương ứng là số dòng và số cột của 2 ảnh (1≤L,C≤1000).
+  2∗L dòng tiếp theo mỗi dòng chứa C số nguyên 0 hoặc 1 cách nhau bởi dấu cách, trong đó L dòng đầu mô tả ảnh 1, L dòng sau mô tả ảnh 2.
+  Ở 1 vị trí xác định, 1 tượng trưng cho có chiến đấu cơ hoặc chim ở đó còn 0 tượng trưng cho vị trí đó không có vật thể nào. Biết rằng số lượng số 1 trong một ảnh rada không quá 10000.
+  Output
+  Với mỗi test tương ứng, ghi duy nhất một số nguyên N là số điểm lớn nhất các đối tượng dịch chuyển theo cùng một cách thức.
+  Example
+  input
+  1
+  10 8
+  0 1 1 0 0 0 0 0
+  0 1 1 1 0 0 0 0
+  0 0 0 0 0 1 0 0
+  0 1 1 1 1 0 0 0
+  0 0 1 1 1 0 0 0
+  0 0 0 1 1 0 0 0
+  0 1 0 0 1 0 0 0
+  0 0 0 0 0 0 1 0
+  0 1 0 0 1 0 0 0
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 1
+  1 1 0 1 1 1 1 0
+  1 1 0 0 1 1 1 0
+  1 0 0 0 0 1 1 0
+  0 0 0 1 0 0 1 0
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  0 1 0 0 1 0 0 0
+  0 0 0 0 0 0 0 0
+  output
+  12
+..............................................................................................................................................................................
+  
+D. 02. WATERJUG BFS
+  There are two jugs, a-litres jug and b-litres jug (a,b are positive integers). There is a pump with unlimited water. Given a positive integer c, how to get exactly c litres.
+  Input
+  Unique line contains positive integers a,b,c (1≤a,b,c≤900).
+  Output
+  Line contains the minimal number of steps to get c litres or -1 if no solution found.
+
+  Example
+  inputCopy
+  6 8 4
+  outputCopy
+  4
+  .................................................................................................................................................................
+  
+E. 02.REROAD
+  Đường vành đai III của thành phố Naho nổi tiếng về chất lượng mặt đường tồi tệ.
+  Lí do là đội ngũ sửa chữa đường của thành phố này quá tùy tiện.
+  Đường vành đai III được chia nhỏ thành N đoạn kế tiếp nhau có cùng chiều dài đơn vị.
+  Mỗi lần sửa chữa đường họ tiến hành như sau: Một nhóm công nhân sẽ lựa chọn một đoạn đường nào đó và thay thế toàn bộ lớp nhựa phủ đường trên đoạn đó.
+  Loại nhựa đường được thay thế trên đoạn này có thể khác hẳn với loại nhựa đường trên các đoạn khác làm gây khó khăn cho việc đi lại trên đường.
+  Là cư dân thành phố Naho và là một lập trình viên giỏi, Hải quyết định sử dụng hiểu biết của mình để giúp ích cho xã hội và làm thuận tiện cho cuộc sống của người dân thành phố khi phải đi qua đường vành đai III.
+  Cụ thể là Hải quyết định tạo trang web chứa thông tin về độ gập ghềnh của đường.
+  Hải đánh số các đoạn đường từ 1 đến N và thu thập thông tin về loại nhựa đường trên từng đoạn t1,t2,…,tN (ti là mã loại nhựa đường phủ trên đoạn đường thứ i ).
+  Hải định nghĩa một phần đường là một dãy liên tục các đoạn đường được phủ cùng loại nhựa phủ tk và bên trái và bên phải phần đường đó là các đoạn đường (nếu tồn tại) được phủ loại nhựa khác.
+  Cuối cùng, Hải xác định độ gập ghềnh của đường bằng tổng số lượng phần đường trên đường vành đai III.
+  Ví dụ đường phố chứa các đoạn đường được phủ bởi loại nhựa có mã lần lượt tương ứng với 1,1,0,1,1,1 sẽ có độ gập ghềnh bằng 3 vì nó chứa đúng 3 phần đường 11, 0 và 111.
+  Đường phố chứa các đoạn đường được phủ bởi loại nhựa có mã lần lượt tương ứng với 2,2,2,2 là lý tưởng vì nó chỉ chứa 1 phần đường và có độ gập ghềnh đúng bằng 1.
+  Dân chúng sẽ hài lòng nếu Hải luôn có thể tính toán và cung cấp trên trang web độ gập ghềnh của đường tại thời điểm hiện tại.
+  Đáng tiếc là mặt đường được thay đổi khá thường xuyên và Hải không muốn mỗi lần như vậy lại phải ra đường thu thập dữ liệu. 
+  Vì vậy Hải yêu cầu đội ngũ sửa chữa đường mỗi lần sửa đường phải gửi một thông báo cho Hải.
+  Mỗi thông báo bao gồm 2 số là số thứ tự đoạn đường được sửa và mã loại nhựa được phủ mới.
+  Nhiệm vụ của Hải là phải cập nhật độ gập ghềnh thực tế của đường sau mỗi thông báo như vậy.
+  Input
+  Dòng đầu tiên chứa số tự nhiên duy nhất N là số lượng đoạn đường (1≤N≤10^5).
+  Dòng tiếp theo chứa N số nguyên t1,t2,…,tN là các loại nhựa đường ban đầu phủ trên các đoạn đường (|ti|≤10^9).
+  Dòng thứ 3 chứa số nguyên duy nhất Q là số lượng thông báo từ dân chúng về việc sửa chữa mặt đường (1≤Q≤10^5).
+  Mỗi dòng trong số Q dòng tiếp theo chứa lần lượt các thông báo.
+  Thông báo thứ i là cặp hai số nguyên pi, ci là số thứ tự của đoạn đường được sửa và mã loại nhựa đường mới được phủ lên trên đoạn đường này (1≤pi≤N, |ci|≤10^9).
+  Đoạn đường được đánh số từ 1 đến N theo đúng thứ tự ghi loại nhựa đường trong dòng thứ 2 của dữ liệu vào.
+  Output
+  In ra Q dòng: dòng thứ i (1≤i≤Q) phải chứa đúng một số nguyên duy nhất là giá trị độ gập ghềnh của đường sau i thông báo sửa đường đầu tiên.
+
+  Examples
+  input
+  5
+  2 2 2 2 2
+  5
+  1 2
+  2 3
+  4 3
+  3 1
+  3 3
+  output
+  1
+  3
+  5
+  5
+  3
+  input
+  7
+  1 1 2 3 2 2 1
+  3
+  2 2
+  4 2
+  6 9
+  output
+  5
+  3
+  4
+  .................................................................................................................................................................
+  
+F. 02.SIGNAL
+  Một thiết bị cảm biến có nhiệm vụ thu nhận dữ liệu về các đối tượng trong 1 khu vực để truyền về cho trung tâm xử lý.
+  Mỗi đối tượng sẽ được biểu diễn bởi 1 dãy số nguyên dương.
+  Như vậy, cảm biến sẽ truyền các dãy số về cho trung tâm xử lý. 
+  Tuy nhiên, do các đối tượng ở gần nhau và có tín hiệu nhiễu nên một dãy số gửi về cho trung tâm có thể là dữ liệu của 2 đối tượng. 
+  Dãy a1,...,an sẽ là dữ liệu của 2 đối tượng nếu có 1 vị trí i (1<i<n) sao cho max{a1,..,ai−1}−ai≥b và max{ai+1,..,an}−ai≥b với b là hằng số cho trước (xem minh hoạ trong Hình 1).
+  Khi phát hiện một dãy số a1,...,an là dữ liệu của 2 đối tượng thì cần phải tiến hành cắt dãy số đó thành 2 dãy, mỗi dãy là dữ liệu của một đối tượng.
+  Khi đó vị trí cắt sẽ là vị trí i sao cho max{a1,..,ai−1}−ai+max{ai+1,..,an}−ai đạt giá trị lớn nhất (giá trị đó gọi là độ đo cắt tín hiệu).
+  Ví dụ: với giá trị b = 5 thì dãy số 3, 5, 4, 7, 2, 5, 4, 6, 9, 8 là dữ liệu của 2 đối tượng vì tìm thấy vị trí i=5 tại đó max{3,5,4,7}−2≥5 và max{5,4,6,9,8}−2≥5 và vị trí i=5 cũng chính là vị trí cắt.
+  Yêu cầu: cho trước giá trị n,b và dãy số nguyên dương a1,...,an. Hãy lập trình kiểm tra xem dãy số a1,...,an có phải là dữ liệu biểu diễn 2 đối tượng hay không và tính độ đo cắt tín hiệu nếu câu trả lời là có.
+  Input
+  Dữ liệu đầu vào bao gồm các dòng sau:
+  Dòng thứ nhất chứa 2 số nguyên dương n và b (3≤n≤200000,1≤b≤50)
+  Dòng thứ 2 chứa n tự nhiên a1,...,an
+  Output
+  Ghi ra độ đo cắt tín hiệu nếu dãy đầu vào là dữ liệu biểu diễn 2 đối tượng và giá trị -1 nếu ngược lại.
+
+  Example
+  input
+  10 5
+  3 5 4 7 2 5 4 6 9 8
+  output
+  12
+..............................................................................................................................................................................
+
+G. SORT INT
+  Cho mảng các số nguyên a. Hãy sắp xếp mảng A theo thứ tự tăng dần
+  Input
+  Dòng đầu chứa một số nguyên là số phần tử của mảng n≤10^6.
+  Dòng thứ hai chứa n số nguyên.
+
+  Output
+  In ra trên một dòng mảng a theo thứ tự tăng dần.
+
+  Example
+  input
+  5
+  7 4 1 2 3
+  output
+  1 2 3 4 7 
+..............................................................................................................................................................................
+
+H. PARENTHESES
+  Input
+  The input file consists of several datasets.
+  The first line of the input file contains the number of datasets which is a positive integer T and is not greater than 1000.
+  Each of T following lines describes a parentheses expression including: '(',')','[',']','{','}'.
+
+  Output
+  For each dataset, write in one line 1 or 0 if the expression is correct or not respectively.
+
+  Example
+  input
+  2
+  ([]())
+  ()()()[}
+  output
+  1
+  0
+..............................................................................................................................................................................
+
+I. Bracket Sequence
+  A bracket sequence is a string, containing only characters "(", ")", "[" and "]".
+  A correct bracket sequence is a bracket sequence that can be transformed into a correct arithmetic expression by inserting characters "1" and "+" between the original characters of the sequence.
+  For example, bracket sequences "()[]", "([])" are correct (the resulting expressions are: "(1)+[1]", "([1+1]+1)"), and "](" and "[" are not.
+  The empty string is a correct bracket sequence by definition.
+  A substring s[l... r] (1 ≤ l ≤ r ≤ |s|) of string s = s1s2... s|s| (where |s| is the length of string s) is the string slsl + 1... sr.
+  The empty string is a substring of any string by definition.
+  You are given a bracket sequence, not necessarily correct. Find its substring which is a correct bracket sequence and contains as many opening square brackets «[» as possible.
+
+  Input
+  The first and the only line contains the bracket sequence as a string, consisting only of characters "(", ")", "[" and "]".
+  It is guaranteed that the string is non-empty and its length doesn't exceed 105 characters.
+
+  Output
+  In the first line print a single integer — the number of brackets «[» in the required bracket sequence.
+  In the second line print the optimal sequence. If there are more than one optimal solutions print any of them.
+
+  Examples
+  input
+  ([])
+  output
+  1
+  ([])
+  input
+  (((
+  output
+  0
+..............................................................................................................................................................................
+
+K. Queue
+  There are n walruses standing in a queue in an airport.
+  They are numbered starting from the queue's tail: the 1-st walrus stands at the end of the queue and the n-th walrus stands at the beginning of the queue.
+  The i-th walrus has the age equal to ai.
+  The i-th walrus becomes displeased if there's a younger walrus standing in front of him, that is, if exists such j (i < j), that ai > aj. 
+  The displeasure of the i-th walrus is equal to the number of walruses between him and the furthest walrus ahead of him, which is younger than the i-th one.
+  That is, the further that young walrus stands from him, the stronger the displeasure is.
+  The airport manager asked you to count for each of n walruses in the queue his displeasure.
+  Input
+  The first line contains an integer n (2 ≤ n ≤ 105) — the number of walruses in the queue. The second line contains integers ai (1 ≤ ai ≤ 109).
+  Note that some walruses can have the same age but for the displeasure to emerge the walrus that is closer to the head of the queue needs to be strictly younger than the other one.
+
+  Output
+  Print n numbers: if the i-th walrus is pleased with everything, print "-1" (without the quotes).
+  Otherwise, print the i-th walrus's displeasure: the number of other walruses that stand between him and the furthest from him younger walrus.
+
+  Examples
+  input
+  6
+  10 8 5 3 50 45
+  outputCopy
+  2 1 0 -1 0 -1 
+  input
+  7
+  10 4 6 3 2 8 15
+  output
+  4 2 1 0 -1 -1 -1 
+  input
+  5
+  10 3 1 10 11
+  output
+  1 0 -1 -1 -1 
+
+..............................................................................................................................................................................
+
+L. Array
+
+  Vitaly has an array of n distinct integers. Vitaly wants to divide this array into three non-empty sets so as the following conditions hold:
+  The product of all numbers in the first set is less than zero ( < 0).
+  The product of all numbers in the second set is greater than zero ( > 0).
+  The product of all numbers in the third set is equal to zero.
+  Each number from the initial array must occur in exactly one set.
+  Help Vitaly. Divide the given array.
+  Input
+  The first line of the input contains integer n (3 ≤ n ≤ 100). The second line contains n space-separated distinct integers a1, a2, ..., an (|ai| ≤ 103) — the array elements.
+
+  Output
+  In the first line print integer n1 (n1 > 0) — the number of elements in the first set. Then print n1 numbers — the elements that got to the first set.
+  In the next line print integer n2 (n2 > 0) — the number of elements in the second set. Then print n2 numbers — the elements that got to the second set.
+  In the next line print integer n3 (n3 > 0) — the number of elements in the third set. Then print n3 numbers — the elements that got to the third set.
+  The printed sets must meet the described conditions. It is guaranteed that the solution exists. If there are several solutions, you are allowed to print any of them.
+  Examples
+  input
+  3
+  -1 2 0
+  output
+  1 -1
+  1 2
+  1 0
+  input
+  4
+  -1 -2 -3 0
+  output
+  1 -1
+  2 -3 -2
+  1 0
+ ..............................................................................................................................................................................
+ 
+P. MAZE
+  A Maze is represented by a 0-1 matrix aN×M in which ai,j = 1 means cell (i,j) is an obstacle, ai,j = 0 means cell (i,j) is free.
+  From a free cell, we can go up, down, left, or right to an adjacent free cell. Compute the minimal number of steps to escape from a Maze from a given cell (i0,j0) within the Maze.
+  Input
+  Line 1 contains N,M,i0,j0 (2≤N,M≤900)
+  Line i+1 (i=1,…,N) contains the ith line of the matrix aN×M
+  Output
+  Unique line contains the number minimal of steps to escape the Maze or -1 if no way to escape the Maze.
+
+  Example
+  input
+  8 12 5 6
+  1 1 0 0 0 0 1 0 0 0 0 1
+  1 0 0 0 1 1 0 1 0 0 1 1
+  0 0 1 0 0 0 0 0 0 0 0 0
+  1 0 0 0 0 0 1 0 0 1 0 1
+  1 0 0 1 0 0 0 0 0 1 0 0
+  1 0 1 0 1 0 0 0 1 0 1 0
+  0 0 0 0 1 0 1 0 0 0 0 0
+  1 0 1 1 0 1 1 1 0 1 0 1
+  output
+  7
